@@ -28,8 +28,11 @@ public class MainActivity extends BaseActivity {
         binding.okBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String inputName = binding.nameEdt.getText().toString();
+
                 Intent intent = new Intent(mContext, UserInfoActivity.class);
+                intent.putExtra("userName", inputName);
                 startActivity(intent);
             }
         });
