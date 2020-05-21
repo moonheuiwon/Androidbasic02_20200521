@@ -29,7 +29,7 @@ public  class UserInfoActivity extends BaseActivity {
 
         String name = getIntent().getStringExtra("userName");
 
-        binding.userNameTxt.setText(name);
+        binding.userInfoTxt.setText(name);
 
     }
 }
